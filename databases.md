@@ -28,3 +28,6 @@ commands:
 - Remove user: `DROP USER username;`.
 - Create Database: `CREATE DATABASE {database_name};`. This command can be more sophisticated with all the columns and data required. However, if the purpose is only to create the database and populate it by a migration from a framework like Django, this command serves the need.
 - Drop Database: `DROP DATABASE [IF EXISTS] {database_name};`
+
+### resources:
+- https://www.youtube.com/watch?v=-LwI4HMR_Eg&t=382s&ab_channel=ProgrammingKnowledge
