@@ -1,5 +1,15 @@
 # Bash
 ## Loop over directory files in terminal
+
+- to run on all files:
+
+```bash
+for filename in /Data/*.txt; do
+    ./MyProgram.exe "$filename" "Logs/$(basename "$filename" .txt)_Log$i.txt"
+done
+```
+- to run on files with some pattern, like numeric pattern:
+
 ```bash
 for filename in /Data/*.txt; do
     for ((i=0; i<=3; i++)); do
@@ -7,6 +17,9 @@ for filename in /Data/*.txt; do
     done
 done
 ```
+
+
+
 ### More
 - https://stackoverflow.com/questions/20796200/how-to-loop-over-files-in-directory-and-change-path-and-add-suffix-to-filename
 
