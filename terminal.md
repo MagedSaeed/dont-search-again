@@ -18,6 +18,7 @@ for filename in /Data/*.txt; do
 done
 ```
 
+You can play with the strucutre the way you want.
 
 
 ### More
