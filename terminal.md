@@ -32,3 +32,11 @@ To open the file: `mplayer -vo caca <filename>`. I took these parameters from [h
 
 ### More
 - https://askubuntu.com/a/300417/786094
+
+
+# Zip a directory
+```bash
+zip -r compressed_filename.zip foldername
+```
+### More
+- https://askubuntu.com/questions/27349/how-do-i-compress-a-directory
