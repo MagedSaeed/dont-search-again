@@ -40,3 +40,17 @@ zip -r compressed_filename.zip foldername
 ```
 ### More
 - https://askubuntu.com/questions/27349/how-do-i-compress-a-directory
+
+## Unzip parted files
+
+By parted zip files, we mean those kind of files which are parted to a specific size like 50MB, 100MB etc. 
+
+First, collect the parts via:
+
+```bash
+cat folder.zip.* > folder.zip
+```
+then unzip using
+```bash
+unzip folder.zip -d folder
+```
