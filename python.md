@@ -6,3 +6,4 @@ curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
 python3.7 get-pip.py --force-reinstall # in case I installed python3.7 and put it in PATH
 pip install -U setuptools
 ```
+related links: https://stackoverflow.com/a/67886408/4412324
