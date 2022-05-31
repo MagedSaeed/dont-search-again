@@ -20,7 +20,7 @@ my_unique_list = list(dict.fromkeys(my_list))
 ```
 A drawback of this solution is that your list items should be hashable. Otherwise, this would not work. If your list contains list as an item, a trick might be to convert them to tuples as tuples are hashable objects. Something like this shuold work:
 
-```
+```python
 my_list = [[1],[2],[3],[3]]
 my_unique_list = list(map(list,dict.fromkeys(map(tuple,my_list))))
 ```
