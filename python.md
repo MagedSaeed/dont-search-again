@@ -13,12 +13,17 @@ This example for an installed version of Python3.7. Please make sure that Python
 
 # Python Lists
 
-remove duplicates from list perserving the list order, use dict keys. This is for Python3.7+
+To remove duplicates from list, you just convert it to set then list again. However, in some cases, order should be perserved. Set operations does not maintain the order. Hence you can use dict keys to maintain it while removing duplicates. This works for Python3.7+. Example:
 ```python
-list = [1,1,2]
-unique_list = list(dict.fromkeys(list))
+my_list = [1,1,2]
+my_unique_list = list(dict.fromkeys(my_list))
 ```
-A drawback of this solution is that your list items should be hashable. Otherwise, this would not work.
+A drawback of this solution is that your list items should be hashable. Otherwise, this would not work. If your list contains list as an item, a trick might be to convert them to tuples as tuples are hashable objects. Something like this shuold work:
+
+```
+my_list = [[1],[2],[3],[3]]
+my_unique_list = list(map(list,dict.fromkeys(map(tuple,my_list))))
+```
 
 ### related links:
 - https://stackoverflow.com/a/17016257/4412324
