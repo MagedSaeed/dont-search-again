@@ -18,7 +18,7 @@ To remove duplicates from list, you just convert it to set then list again. Howe
 my_list = [1,1,2]
 my_unique_list = list(dict.fromkeys(my_list))
 ```
-A drawback of this solution is that your list items should be hashable. Otherwise, this would not work. If your list contains list as an item, a trick might be to convert them to tuples as tuples are hashable objects. Something like this shuold work:
+A drawback of this solution is that your list items should be hashable. Otherwise, this would not work. If the items of your list are also lists, i.e. your list is a list of lists, a trick might be to convert the lists to tuples then convert back to lists for consistency. This is because tuples are hashable objects. Something like this shuold work:
 
 ```python
 my_list = [[1],[2],[3],[3]]
