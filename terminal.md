@@ -54,3 +54,17 @@ then unzip using
 ```bash
 unzip folder.zip -d folder
 ```
+
+
+## Watch a command
+
+If you want to monitor command output every n seconds, you can use `watch` utility. Example of watching `nvidia-smi` memory usage:
+
+```bash
+watch -n 1 nvidia-smi
+```
+`n` here refers to the number of second to poll the command again.
+
+### More
+- https://stackoverflow.com/a/35913280/4412324
+
