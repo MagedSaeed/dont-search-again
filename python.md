@@ -27,3 +27,16 @@ my_unique_list = list(map(list,dict.fromkeys(map(tuple,my_list))))
 
 ### related links:
 - https://stackoverflow.com/a/17016257/4412324
+
+## General code snippets
+
+### Extract the domain of a url:
+
+```python
+from urllib.parse import urlparse
+domain = urlparse('http://www.example.test/foo/bar').netloc
+print(domain) # --> www.example.test
+```
+
+#### related links:
+- https://stackoverflow.com/a/56476496/4412324
