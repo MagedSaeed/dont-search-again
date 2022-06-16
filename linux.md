@@ -15,5 +15,9 @@ to enable the swap memory again:
 ```bash
 swapon -a
 ```
+
+Make sure you have enough memory on RAM for this opration to finish successfully.
+
 ## More
 - https://www.redhat.com/sysadmin/clear-swap-linux
+- https://askubuntu.com/a/1359/786094
