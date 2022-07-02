@@ -40,3 +40,12 @@ print(domain) # --> www.example.test
 
 #### related links:
 - https://stackoverflow.com/a/56476496/4412324
+
+
+# Python requests library
+
+Sometimes, while making a requests via `requests` pachage, the default headers needs to be extended. To find the default headers:
+
+```python
+from requests.utils import default_headers
+```
