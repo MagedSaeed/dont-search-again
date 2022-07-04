@@ -50,7 +50,7 @@ Sometimes, while making a requests via `requests` pachage, the default headers n
 from requests.utils import default_headers
 ```
 
-# Recursion Depth
+# Recursion Depth Management
 
 To show the maximum limit of recursion in Python:
 
