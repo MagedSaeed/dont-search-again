@@ -49,3 +49,20 @@ Sometimes, while making a requests via `requests` pachage, the default headers n
 ```python
 from requests.utils import default_headers
 ```
+
+# Recursion Depth
+
+To show the maximum limit of recursion in Python:
+
+```pytthon
+import sys
+print(sys.getrecursionlimit())
+```
+
+To increase the default recursion depth:
+
+```python
+import sys
+sys.setrecursionlimit(1500)
+```
+
