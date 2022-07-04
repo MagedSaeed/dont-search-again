@@ -54,7 +54,7 @@ from requests.utils import default_headers
 
 To show the maximum limit of recursion in Python:
 
-```pytthon
+```python
 import sys
 print(sys.getrecursionlimit())
 ```
