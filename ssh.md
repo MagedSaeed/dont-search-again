@@ -18,3 +18,6 @@ ssh-keygen -t rsa -b 4096 -C "my_email@adress.me"
 ls ~/.ssh/id_*
 ```
 What will be prompted is two files, one for the private key and the other is for the public one.
+
+### Detailed resources
+- https://linuxize.com/post/how-to-set-up-ssh-keys-on-ubuntu-20-04/
