@@ -18,3 +18,12 @@ git branch -u origin/main main
 git remote set-head origin -a
 ```
 These settings are showned once as a pop-up on github interface but never come again.
+
+# Removing a branch locally before commiting it to remote
+
+```bash
+git branch -d  local_branch_name
+```
+
+## More
+- https://www.freecodecamp.org/news/git-delete-branch-how-to-remove-a-local-or-remote-branch/
