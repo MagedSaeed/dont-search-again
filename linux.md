@@ -21,3 +21,12 @@ Make sure you have enough memory on RAM for this opration to finish successfully
 ## More
 - https://www.redhat.com/sysadmin/clear-swap-linux
 - https://askubuntu.com/a/1359/786094
+
+
+# List listening ports:
+```bash
+sudo netstat -tunlp
+```
+
+## More:
+- https://linuxize.com/post/check-listening-ports-linux/
