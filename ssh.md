@@ -21,3 +21,16 @@ What will be prompted is two files, one for the private key and the other is for
 
 ### Detailed resources
 - https://linuxize.com/post/how-to-set-up-ssh-keys-on-ubuntu-20-04/
+
+
+# Forwarding keys to server
+
+In many cases, it is required to perform ssh-authorized operations on remote using the authorizing key. In order to allow such operations, key should be forwarded to remote. To do so, add:
+```
+Host host.com
+    ForwardAgent yes
+```
+to ~/.ssh/config file
+
+## More:
+- https://stackoverflow.com/a/12409249/4412324
