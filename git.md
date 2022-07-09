@@ -42,3 +42,6 @@ git checkout <branch_name>
 ```bash
 git checkout -b <branch_name>
 ```
+
+### More:
+- https://devconnected.com/how-to-switch-branch-on-git/
