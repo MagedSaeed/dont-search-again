@@ -27,3 +27,18 @@ git branch -d  local_branch_name
 
 ## More
 - https://www.freecodecamp.org/news/git-delete-branch-how-to-remove-a-local-or-remote-branch/
+
+
+# Branches
+
+## Switch to existing branch
+
+```bash
+git checkout <branch_name>
+```
+
+## Create new branch and switch to it
+
+```bash
+git checkout -b <branch_name>
+```
