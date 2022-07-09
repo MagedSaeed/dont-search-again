@@ -34,3 +34,12 @@ to ~/.ssh/config file
 
 ## More:
 - https://stackoverflow.com/a/12409249/4412324
+
+
+# General SSH tips
+
+## List all keys allowing ssh-authorized operations:
+```bash
+ssh-add -l
+```
+
