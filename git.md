@@ -7,7 +7,7 @@ git log origin/master..HEAD
 - https://stackoverflow.com/a/2016954/4412324
 
 
-# When master branch changed on remote
+# When master branch name changed on remote
 
 If the master branch name changed in remote, you can do the following to pull/reflect this change in the local repo:
 
@@ -45,3 +45,13 @@ git checkout -b <branch_name>
 
 ### More:
 - https://devconnected.com/how-to-switch-branch-on-git/
+
+
+# Discarding local changes in git
+
+```bash
+git restore .
+git resotre path/to/file
+```
+## More
+- https://stackoverflow.com/a/52713/4412324
