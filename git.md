@@ -55,3 +55,15 @@ git resotre path/to/file
 ```
 ## More
 - https://stackoverflow.com/a/52713/4412324
+
+# Git configuration (setting username and email)
+
+To list the saved data:
+```bash
+git config --list
+```
+to set:
+```bash
+git config user.name "Your Name"
+git config user.email "youremail@yourdomain.com"
+```
