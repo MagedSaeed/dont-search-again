@@ -67,3 +67,6 @@ to set:
 git config user.name "Your Name"
 git config user.email "youremail@yourdomain.com"
 ```
+
+## More:
+- https://linuxize.com/post/how-to-configure-git-username-and-email/
