@@ -71,3 +71,24 @@ This saves this information to a config file with path `~/.gitconfig`
 
 ## More:
 - https://linuxize.com/post/how-to-configure-git-username-and-email/
+
+# Folder owner change issue with git
+
+In some cases, when running `git status` in a repository directory, the following error message appears:
+```
+fatal: detected dubious ownership in repository at '/path/to/repository'
+To add an exception for this directory, call:
+
+	git config --global --add safe.directory /path/to/repository
+```
+what happens here is that `git` refuses to respond if the folder owner is different from the current user. To disable this behaviour on the repository folder, the following command can be executed:
+```bash
+git config --global --add save.directory /path/to/repository
+```
+This will edit the the file `~/.gitconfig` adding this repo under the `[save]` group.
+To disable this behaviour at all, update the `[save]` group in the `~/.gitconfig` file to include \*:
+```
+# part of ~/.gitconfig content
+[safe]
+	directory = *
+```
