@@ -67,6 +67,7 @@ to set:
 git config user.name "Your Name"
 git config user.email "youremail@yourdomain.com"
 ```
+This saves this information under a file with path `~/.gitconfig`
 
 ## More:
 - https://linuxize.com/post/how-to-configure-git-username-and-email/
