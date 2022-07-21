@@ -92,3 +92,5 @@ To disable this behaviour at all, update the `[save]` group in the `~/.gitconfig
 [safe]
 	directory = *
 ```
+## More:
+- https://stackoverflow.com/a/71904131/4412324
