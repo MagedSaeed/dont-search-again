@@ -31,3 +31,7 @@ commands:
 
 ### resources:
 - https://www.youtube.com/watch?v=-LwI4HMR_Eg&t=382s&ab_channel=ProgrammingKnowledge
+
+# SQLite support for JSONField
+## More
+- https://code.djangoproject.com/wiki/JSON1Extension
