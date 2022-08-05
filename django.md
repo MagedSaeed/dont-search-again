@@ -20,4 +20,18 @@ This list below contains fast shortcuts for the commands frequently used in djan
 - line breaks, replacing newlines (\n) by `<br>`:
     `'string1'|linebreaksbr`
  
-  
+# Creating super user
+
+Creating superuser can happen in various ways. The easist way is to run `python manage.py createsuperuser` in shell. For a more advanced method, it can be embedded in shell as follows:
+```python
+from django.contrib.auth import get_user_model
+from getpass import getpass
+
+User = get_user_model()
+
+new_user = User(username='username')
+new_user.set_password(getpass())
+new_user.save()
+
+```
+Note the use of `getpass` module to cover the password in shell. Also, `set_pass` method sets a hashable password unlike settinging in the User initializer where the password wont be hashed.
