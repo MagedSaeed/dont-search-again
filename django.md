@@ -31,6 +31,8 @@ User = get_user_model()
 
 new_user = User(username='username')
 new_user.set_password(getpass())
+new_user.is_superuser = True
+new_user.is_staff = True
 new_user.save()
 
 ```
