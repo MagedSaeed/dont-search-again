@@ -30,3 +30,12 @@ sudo netstat -tunlp
 
 ## More:
 - https://linuxize.com/post/check-listening-ports-linux/
+
+
+# dpkg error
+
+When faced with the error: `E: dpkg was interrupted, you must manually run 'c' to correct the problem.`
+you may try to run the command `sudo dpkg --configure -a` as instructed. If that did not work, you may delete the dpkg tmp updates files in `/var/lib/dpkg/updates`
+
+## More:
+- https://askubuntu.com/questions/163200/e-dpkg-was-interrupted-run-sudo-dpkg-configure-a
