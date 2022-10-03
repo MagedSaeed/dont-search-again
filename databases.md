@@ -28,7 +28,8 @@ commands:
 - Remove user: `DROP USER username;`.
 - Create Database: `CREATE DATABASE {database_name};`. This command can be more sophisticated with all the columns and data required. However, if the purpose is only to create the database and populate it by a migration from a framework like Django, this command serves the need.
 - Drop Database: `DROP DATABASE [IF EXISTS] {database_name};`
-- Change database owner: 'ALTER DATABASE name OWNER TO new_owner;'
+- Change database owner: `'ALTER DATABASE name OWNER TO new_owner;'`
+- To connect to a database: `\c database`
 - To grant a user an access to the databse:
  ```bash
  psql mydatabase -c "GRANT ALL ON ALL TABLES IN SCHEMA public to dbuser;"
