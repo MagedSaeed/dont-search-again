@@ -2,7 +2,12 @@
 
 ## .7z files
 
-```python
+```bash
 # https://superuser.com/a/540010/1046355
 7za x myarchive.7z
+```
+
+## .zip files
+```bash
+unzip -d output archive.zip
 ```
