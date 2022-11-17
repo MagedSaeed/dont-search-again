@@ -55,3 +55,15 @@ Then clone the repo as: `https://<account>@github.com/<account>/<repo>.git`. You
 
 ## More:
 - https://stackoverflow.com/questions/16077971/git-produces-gtk-warning-cannot-open-display
+
+# Screenshot issue with Ubuntu 22.04
+
+Solved by creating a shortcut to this command:
+```bash
+sh -c "gnome-screenshot -acf /tmp/test && cat /tmp/test | xclip -i -selection clipboard -target image/png"
+```
+
+make sure that xclip is installed.
+
+## More:
+- https://askubuntu.com/a/1420316/786094
