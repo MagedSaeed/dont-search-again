@@ -11,7 +11,10 @@
 ```bash
 # https://askubuntu.com/a/86852/786094
 unzip -d output archive.zip #-qq for silent unzip, https://apple.stackexchange.com/a/277733
+# to zip:
+zip -r output.zip folder
 ```
+
 
 ## .tar.bz2
 ```bash
