@@ -5,6 +5,8 @@
 ```bash
 # https://superuser.com/a/540010/1046355
 7za x myarchive.7z
+# to extract to a destination folder:
+7z x myarchive.7z -o/dest # there should be no space between -o and the dest folder
 ```
 
 ## .zip files
