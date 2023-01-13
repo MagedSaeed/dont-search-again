@@ -2,6 +2,7 @@
 ```bash
 tmux 
 ```
+---
 
 - attach to session
 ```bash
@@ -12,11 +13,13 @@ tmux a -t [session-name]
 ```
 ctrl+b d
 ```
+---
 
 - list sessions
 ```bash
 tmux ls
 ```
+---
 
 - rename session
 ```bash
@@ -33,6 +36,7 @@ ctrl+b $
 
 `ctrl+b`, `:` then, `rename-session [-t current-name] [new-name]`
 
+---
 
 - kill session
 ```bash
@@ -42,3 +46,5 @@ tmux kill-session [-t session-name]
 - kill session from within that session
 
 `ctrl+b`, `:` then, `kill-session [-t session-name]`
+
+---
