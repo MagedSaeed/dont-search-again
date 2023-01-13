@@ -24,11 +24,11 @@ tmux rename-session [-t current-name] [new-name]
 ```
 
 - rename session from within that session
-short way:
+  - short way:
 ```
 ctrl+b $
 ```
-long way:
+  - long way:
 
 `ctrl+b`, `:` then, `rename-session [-t current-name] [new-name]`
 
