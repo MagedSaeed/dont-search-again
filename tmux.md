@@ -3,6 +3,11 @@
 tmux 
 ```
 
+- attach to session
+```bash
+tmux a -t [session-name]
+```
+
 - detach session from within that session:
 ```
 ctrl+b d
