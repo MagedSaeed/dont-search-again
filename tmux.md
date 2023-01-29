@@ -4,6 +4,12 @@ tmux
 ```
 ---
 
+- create session with a name:
+
+```bash
+tmux new -s [session-name]
+```
+
 - attach to session
 ```bash
 tmux a -t [session-name]
