@@ -54,3 +54,9 @@ tmux kill-session [-t session-name]
 `ctrl+b`, `:` then, `kill-session [-t session-name]`
 
 ---
+
+- jumb to another session from within a session
+```bash
+ctrl+b s
+``` 
+---
