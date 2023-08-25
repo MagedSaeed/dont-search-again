@@ -60,3 +60,9 @@ tmux kill-session [-t session-name]
 ctrl+b s
 ``` 
 ---
+
+- Capture session content to file:
+
+  - capture content to buffer: `ctrl+b`, `:` `capture-pane -S -`. replace `-` by the number lines if needed, else capture all content.
+  - Save the buffer to file: `ctrl+b`, `:` `save-buffer filename.txt`. by default, it saves to ~/. Use absolute path to save somewhere else.
+
