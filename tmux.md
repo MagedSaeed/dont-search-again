@@ -66,3 +66,13 @@ ctrl+b s
   - capture content to buffer: `ctrl+b`, `:` `capture-pane -S -`. replace `-` by the number lines if needed, else capture all content.
   - Save the buffer to file: `ctrl+b`, `:` `save-buffer filename.txt`. by default, it saves to ~/. Use absolute path to save somewhere else.
 
+---
+
+- clear previous session history
+  first clear (ctrl+l), then:
+  
+`ctrl+b`, `:` then, `clear-history`
+
+source: https://stackoverflow.com/a/48645939/4412324
+
+
