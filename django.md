@@ -54,5 +54,5 @@ Then, in your `settings.json` file, add the following to indent files within dja
                 "cmd": "djhtml -i '${file}'",
             },
         ]
-    },
+    }
 ```
