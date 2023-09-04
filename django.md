@@ -37,3 +37,22 @@ new_user.save()
 
 ```
 Note the use of `getpass` module to cover the password in shell. Also, `set_pass` method sets a hashable password unlike settinging in the User initializer where the password wont be hashed.
+
+
+# Adding a django template indenter to the vscode workspace
+
+- First, you need to install `emeraldwalk.runonsave` (https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave) extension. This extension enables running bash commands on save.
+
+- After `emeraldwalk.runonsave` is installed, you need to install `djhtml` which is a jinja template indenter (https://github.com/rtts/djhtml).
+Then, in your `settings.json` file, add the following to indent files within django templates dirs:
+
+```json
+"emeraldwalk.runonsave": {
+        "commands": [
+            {
+                "match": "templates.+\\.html",
+                "cmd": "djhtml -i '${file}'",
+            },
+        ]
+    },
+```
