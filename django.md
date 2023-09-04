@@ -39,7 +39,9 @@ new_user.save()
 Note the use of `getpass` module to cover the password in shell. Also, `set_pass` method sets a hashable password unlike settinging in the User initializer where the password wont be hashed.
 
 
-# Adding a django template indenter to the vscode workspace
+# Adding a Django template indenter to vscode workspace
+
+Please note that this will allow to indent the templates `on save` action.
 
 - First, you need to install `emeraldwalk.runonsave` (https://marketplace.visualstudio.com/items?itemName=emeraldwalk.RunOnSave) extension. This extension enables running bash commands on save.
 
