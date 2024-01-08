@@ -66,3 +66,12 @@ import sys
 sys.setrecursionlimit(1500)
 ```
 
+# Disabling SSL verification
+
+In some cases, you may need to disable ssl globally for experimental purposes:
+```python
+import ssl
+
+ssl._create_default_https_context = ssl._create_unverified_context
+```
+
