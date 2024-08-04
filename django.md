@@ -53,7 +53,7 @@ Then, in your `settings.json` file, add the following to indent files within dja
         "commands": [
             {
                 "match": "templates.+\\.html",
-                "cmd": "djhtml -i '${file}'",
+                "cmd": "djhtml '${file}'",
             },
         ]
     }
